@@ -1,10 +1,23 @@
-"""CLI Chat package - TCP/UDP command-line messenger."""
+"""
+chat
+====
 
-__version__ = "0.1.0"
-HOST = "127.0.0.1"
-PORT = 5000
+A minimal package initializer for the CLI-Chat project.
+Exposes the most useful sub-modules and a version string.
+"""
 
-from .server import run_server
-from .client import run_client
+from importlib.metadata import version, PackageNotFoundError
 
-__all__ = ["run_server", "run_client", "HOST", "PORT", "__version__"]
+__all__ = [
+    "tcp_client",
+    "tcp_server",
+    "udp_client",
+    "udp_server",
+    "link_monitor",
+    "proto",
+]
+
+try:  # Resolve the installed package version if distributed, else fallback
+    __version__ = version("chat")
+except PackageNotFoundError:
+    __version__ = "0.3.0"  # bump when you tag a new release
