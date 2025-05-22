@@ -17,7 +17,7 @@ __all__ = [
     "proto",
 ]
 
-try:  # Resolve the installed package version if distributed, else fallback
-    __version__ = version("chat")
+try:
+    __version__ = version("chat") # Get version of 'chat' package
 except PackageNotFoundError:
-    __version__ = "0.3.0"  # bump when you tag a new release
+    __version__ = "0.3.0" # Fallback if not installed
