@@ -12,7 +12,7 @@ import select
 import socket
 import sys
 
-import proto  # chat/proto.py
+from chat import proto  # chat/proto.py
 
 TAG_UDP = b"U"
 PING = b"__ping__"

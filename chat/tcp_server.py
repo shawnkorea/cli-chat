@@ -21,7 +21,7 @@ import socket
 import threading
 from typing import Tuple
 
-import proto  # chat/proto.py
+from chat import proto  # chat/proto.py
 
 # --------------------------------------------------------------------------- #
 PING_BODY = b"__ping__"

@@ -30,7 +30,7 @@ import time
 import socket
 from typing import Callable, Optional, Tuple
 
-import proto  # chat/proto.py
+from chat import proto  # chat/proto.py
 
 PING = b"__ping__"
 TAG_TCP = b"T"

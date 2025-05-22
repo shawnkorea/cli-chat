@@ -17,8 +17,8 @@ import socket
 import sys
 from typing import Tuple
 
-import proto                       # chat/proto.py
-from link_monitor import LinkMonitor
+from chat import proto  # chat/proto.py
+from .link_monitor import LinkMonitor
 
 TAG_TCP = b"T"
 TAG_UDP = b"U"

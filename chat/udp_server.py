@@ -16,7 +16,7 @@ import socket
 import threading
 from typing import Tuple
 
-import proto  # chat/proto.py
+from chat import proto  # chat/proto.py
 
 PING = b"__ping__"
 TAG_UDP = b"U"
